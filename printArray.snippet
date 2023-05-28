@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>print array</Title>
+			<Shortcut>defprintarr</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+				</Literal>
+				<Literal>
+					<ID>address</ID>
+				</Literal>
+			</Declarations>
+			<Code Language="CPP">
+				<![CDATA[/*
+Prints all elements in a given array
+Input: pointer to array, size of array
+Output: void
+*/
+void printArray(int arr[], int arrSize)
+{
+	int i = 0;
+	for (i = 0; i < arrSize; i++)
+	{
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+}$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
